@@ -144,7 +144,7 @@ class Window(QMainWindow):
             return
 
         title = self.tabs.currentWidget().page().title()
-        self.setWindowTitle(f"{title} - PythonGeeks Web Browser")
+        self.setWindowTitle(f"{title} - Simple Web Browser")
 
     def navigate_to_url(self):
         q = QUrl(self.URLBar.text())
@@ -171,7 +171,7 @@ class Window(QMainWindow):
 
 
 app = QApplication(sys.argv)
-app.setApplicationName('PythonGeeks Web Browser')
+app.setApplicationName('Simple Web Browser')
 
 window = Window()
 app.exec_()
